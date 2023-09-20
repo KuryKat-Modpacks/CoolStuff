@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X X",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "cool_stuff:cool_item"
+    }
+  },
+  "result": {
+    "item": "cool_stuff:cool_leggings"
+  }
+}

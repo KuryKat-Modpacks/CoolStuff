@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cool_stuff:cool_block"
+    }
+  ],
+  "result": {
+    "item": "cool_stuff:cool_item",
+    "count": 9
+  }
+}
