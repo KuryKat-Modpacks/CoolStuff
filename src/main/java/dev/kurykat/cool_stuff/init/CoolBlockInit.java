@@ -28,6 +28,18 @@ public class CoolBlockInit {
             CoolStuff.defaultProps()
     );
 
+    public static final RegistryObject<Block> COOL_ANIMATED_BLOCK = register(
+            "cool_animated_block",
+            () -> new Block(
+                    BlockBehaviour.Properties
+                            .of(Material.WOOD)
+                            .strength(6, 50)
+                            .requiresCorrectToolForDrops()
+                            .sound(ForgeSoundType.GRASS)
+            ),
+            CoolStuff.defaultProps()
+    );
+
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> supplier, Item.Properties properties) {
         RegistryObject<T> block = COOL_BLOCKS.register(name, supplier);
         CoolItemInit.COOL_ITEMS.register(name, () -> new BlockItem(block.get(), properties));
