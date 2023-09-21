@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "cool_stuff:cool_block"
+    "cool_stuff:cool_block",
+    "cool_stuff:cool_animated_block"
   ]
 }
