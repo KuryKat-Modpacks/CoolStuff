@@ -2,6 +2,7 @@ package dev.kurykat.cool_stuff.init;
 
 import dev.kurykat.cool_stuff.CoolStuff;
 import dev.kurykat.cool_stuff.base.CoolArmorMaterial;
+import dev.kurykat.cool_stuff.base.CoolFuelItem;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -22,6 +23,14 @@ public class CoolItemInit {
                     CoolStuff.defaultProps()
             )
     );
+
+    public static final RegistryObject<Item> COOL_FUEL = COOL_ITEMS.register(
+            "cool_fuel",
+            () -> new CoolFuelItem(
+                    CoolStuff.defaultProps(), 600
+            )
+    );
+
     public static final RegistryObject<Item> COOL_FOOD = COOL_ITEMS.register(
             "cool_food",
             () -> new Item(
