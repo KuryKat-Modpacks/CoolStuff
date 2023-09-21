@@ -14,5 +14,7 @@
   "item.cool_stuff.cool_leggings": "Cool Leggings",
   "item.cool_stuff.cool_boots": "Cool Boots",
   "block.cool_stuff.cool_block": "Cool Block",
-  "block.cool_stuff.cool_animated_block": "Cool Animated Block"
+  "block.cool_stuff.cool_animated_block": "Cool Animated Block",
+  "block.cool_stuff.cool_flower": "Cool Flower",
+  "block.cool_stuff.cool_potted_flower": "Cool Potted Flower"
 }
