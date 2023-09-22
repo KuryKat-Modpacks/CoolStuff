@@ -5,7 +5,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
 
-version = '0.0.2'
+version = '0.0.3'
 group = 'dev.kurykat.cool_stuff'
 archivesBaseName = 'cool_stuff'
 
@@ -82,7 +82,7 @@ jar {
         attributes([
                 "Specification-Title"     : "Cool Stuff",
                 "Specification-Vendor"    : "KuryKat",
-                "Specification-Version"   : "0.0.2",
+                "Specification-Version"   : "0.0.3",
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : "KuryKat",
