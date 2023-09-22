@@ -2,6 +2,11 @@
   "replace": false,
   "values": [
     "cool_stuff:cool_block",
-    "cool_stuff:cool_animated_block"
+    "cool_stuff:cool_animated_block",
+    "cool_stuff:cool_advanced_block",
+    "cool_stuff:cool_ore",
+    "cool_stuff:cool_deepslate_ore",
+    "cool_stuff:cool_nether_ore",
+    "cool_stuff:cool_end_ore"
   ]
 }

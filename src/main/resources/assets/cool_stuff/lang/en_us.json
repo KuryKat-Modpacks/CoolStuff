@@ -1,6 +1,7 @@
 {
   "itemGroup.cool_stuff": "Cool Stuff",
   "item.cool_stuff.cool_item": "Cool Item",
+  "item.cool_stuff.cool_advanced_item": "Cool \"Advanced\" Item",
   "item.cool_stuff.cool_fuel": "Cool Fuel",
   "item.cool_stuff.cool_food": "Cool Food",
   "item.cool_stuff.cool_bow": "Cool Bow",
@@ -14,7 +15,15 @@
   "item.cool_stuff.cool_leggings": "Cool Leggings",
   "item.cool_stuff.cool_boots": "Cool Boots",
   "block.cool_stuff.cool_block": "Cool Block",
+  "block.cool_stuff.cool_ore": "Cool Ore",
+  "block.cool_stuff.cool_deepslate_ore": "Cool Deepslate Ore",
+  "block.cool_stuff.cool_nether_ore": "Cool Nether Ore",
+  "block.cool_stuff.cool_end_ore": "Cool End Ore",
   "block.cool_stuff.cool_animated_block": "Cool Animated Block",
+  "block.cool_stuff.cool_advanced_block": "Cool \"Advanced\" Block",
   "block.cool_stuff.cool_flower": "Cool Flower",
-  "block.cool_stuff.cool_potted_flower": "Cool Potted Flower"
+  "block.cool_stuff.cool_potted_flower": "Cool Potted Flower",
+  "cooL_stuff.cool_advanced_item.right_click": "Hello World!",
+  "cooL_stuff.cool_advanced_item.tooltip": "Press \\u00A75[SHIFT]\\u00A7r for more information",
+  "cooL_stuff.cool_advanced_item.tooltip.shift": "HEY YOU THERE! YES YOU!\nCLICK ME!\nRIGHT NOW!!"
 }

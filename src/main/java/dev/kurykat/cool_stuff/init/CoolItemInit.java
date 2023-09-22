@@ -3,6 +3,7 @@ package dev.kurykat.cool_stuff.init;
 import dev.kurykat.cool_stuff.CoolStuff;
 import dev.kurykat.cool_stuff.base.CoolArmorMaterial;
 import dev.kurykat.cool_stuff.base.CoolFuelItem;
+import dev.kurykat.cool_stuff.items.CoolAdvancedItem;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -20,21 +21,28 @@ public class CoolItemInit {
     public static final RegistryObject<Item> COOL_ITEM = COOL_ITEMS.register(
             "cool_item",
             () -> new Item(
-                    CoolStuff.defaultProps()
+                    CoolStuff.defaultItemProps()
+            )
+    );
+
+    public static final RegistryObject<CoolAdvancedItem> COOL_ADVANCED_ITEM = COOL_ITEMS.register(
+            "cool_advanced_item",
+            () -> new CoolAdvancedItem(
+                    CoolStuff.defaultItemProps()
             )
     );
 
     public static final RegistryObject<Item> COOL_FUEL = COOL_ITEMS.register(
             "cool_fuel",
             () -> new CoolFuelItem(
-                    CoolStuff.defaultProps(), 600
+                    CoolStuff.defaultItemProps(), 600
             )
     );
 
     public static final RegistryObject<Item> COOL_FOOD = COOL_ITEMS.register(
             "cool_food",
             () -> new Item(
-                    CoolStuff.defaultProps()
+                    CoolStuff.defaultItemProps()
                             .food(CoolFoods.COOL_FOOD)
             )
     );
@@ -45,7 +53,7 @@ public class CoolItemInit {
                     CoolToolTiers.COOL_TIER,
                     5,
                     3.5f,
-                    CoolStuff.defaultProps()
+                    CoolStuff.defaultItemProps()
             )
     );
 
@@ -56,7 +64,7 @@ public class CoolItemInit {
                     CoolToolTiers.COOL_TIER,
                     4,
                     3.5f,
-                    CoolStuff.defaultProps()
+                    CoolStuff.defaultItemProps()
             )
     );
 
@@ -66,7 +74,7 @@ public class CoolItemInit {
                     CoolToolTiers.COOL_TIER,
                     6,
                     3.5f,
-                    CoolStuff.defaultProps()
+                    CoolStuff.defaultItemProps()
             )
     );
 
@@ -76,7 +84,7 @@ public class CoolItemInit {
                     CoolToolTiers.COOL_TIER,
                     3,
                     3.5f,
-                    CoolStuff.defaultProps()
+                    CoolStuff.defaultItemProps()
             )
     );
 
@@ -86,7 +94,7 @@ public class CoolItemInit {
                     CoolToolTiers.COOL_TIER,
                     1,
                     3.5f,
-                    CoolStuff.defaultProps()
+                    CoolStuff.defaultItemProps()
             )
     );
     
@@ -95,7 +103,7 @@ public class CoolItemInit {
             () -> new ArmorItem(
                     CoolArmorTiers.COOL_ARMOR_MATERIAL,
                     EquipmentSlot.HEAD,
-                    CoolStuff.defaultProps()
+                    CoolStuff.defaultItemProps()
             )
     );
     
@@ -104,7 +112,7 @@ public class CoolItemInit {
             () -> new ArmorItem(
                     CoolArmorTiers.COOL_ARMOR_MATERIAL,
                     EquipmentSlot.CHEST,
-                    CoolStuff.defaultProps()
+                    CoolStuff.defaultItemProps()
             )
     );
     
@@ -113,7 +121,7 @@ public class CoolItemInit {
             () -> new ArmorItem(
                     CoolArmorTiers.COOL_ARMOR_MATERIAL,
                     EquipmentSlot.LEGS,
-                    CoolStuff.defaultProps()
+                    CoolStuff.defaultItemProps()
             )
     );
     
@@ -122,7 +130,7 @@ public class CoolItemInit {
             () -> new ArmorItem(
                     CoolArmorTiers.COOL_ARMOR_MATERIAL,
                     EquipmentSlot.FEET,
-                    CoolStuff.defaultProps()
+                    CoolStuff.defaultItemProps()
             )
     );
 

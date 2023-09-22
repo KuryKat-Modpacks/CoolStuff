@@ -1,6 +1,7 @@
 package dev.kurykat.cool_stuff.init;
 
 import dev.kurykat.cool_stuff.CoolStuff;
+import dev.kurykat.cool_stuff.blocks.CoolAdvancedBlock;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -20,6 +21,38 @@ import java.util.function.Supplier;
 public class CoolBlockInit {
     public static final DeferredRegister<Block> COOL_BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CoolStuff.COOL_MOD_ID);
 
+    public static final RegistryObject<Block> COOL_OVERWORLD_ORE = register(
+            "cool_ore",
+            () -> new Block(
+                    BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)
+            ),
+            CoolStuff.defaultItemProps()
+    );
+
+    public static final RegistryObject<Block> COOL_DEEPSLATE_OVERWORLD_ORE = register(
+            "cool_deepslate_ore",
+            () -> new Block(
+                    BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE)
+            ),
+            CoolStuff.defaultItemProps()
+    );
+
+    public static final RegistryObject<Block> COOL_NETHER_ORE = register(
+            "cool_nether_ore",
+            () -> new Block(
+                    BlockBehaviour.Properties.copy(Blocks.NETHER_QUARTZ_ORE)
+            ),
+            CoolStuff.defaultItemProps()
+    );
+
+    public static final RegistryObject<Block> COOL_END_ORE = register(
+            "cool_end_ore",
+            () -> new Block(
+                    BlockBehaviour.Properties.copy(Blocks.END_STONE)
+            ),
+            CoolStuff.defaultItemProps()
+    );
+
     public static final RegistryObject<Block> COOL_BLOCK = register(
             "cool_block",
             () -> new Block(
@@ -29,7 +62,7 @@ public class CoolBlockInit {
                             .requiresCorrectToolForDrops()
                             .sound(ForgeSoundType.GLASS)
             ),
-            CoolStuff.defaultProps()
+            CoolStuff.defaultItemProps()
     );
 
     public static final RegistryObject<Block> COOL_ANIMATED_BLOCK = register(
@@ -41,8 +74,17 @@ public class CoolBlockInit {
                             .requiresCorrectToolForDrops()
                             .sound(ForgeSoundType.GRASS)
             ),
-            CoolStuff.defaultProps()
+            CoolStuff.defaultItemProps()
     );
+
+    public static final RegistryObject<CoolAdvancedBlock> COOL_ADVANCED_BLOCK = register(
+            "cool_advanced_block",
+            () -> new CoolAdvancedBlock(
+                    BlockBehaviour.Properties.copy(Blocks.STONE).randomTicks()
+            ),
+            CoolStuff.defaultItemProps()
+    );
+
 
     public static final RegistryObject<FlowerBlock> COOL_FLOWER = register(
         "cool_flower",
@@ -51,7 +93,7 @@ public class CoolBlockInit {
                     300,
                     BlockBehaviour.Properties.copy(Blocks.POPPY)
             ),
-            CoolStuff.defaultProps()
+            CoolStuff.defaultItemProps()
     );
 
     public static final RegistryObject<FlowerPotBlock> COOL_POTTED_FLOWER = COOL_BLOCKS.register(

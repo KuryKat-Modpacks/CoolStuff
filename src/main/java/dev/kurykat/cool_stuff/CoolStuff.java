@@ -1,8 +1,6 @@
 package dev.kurykat.cool_stuff;
 
-import dev.kurykat.cool_stuff.init.CoolBlockInit;
-import dev.kurykat.cool_stuff.init.CoolItemInit;
-import dev.kurykat.cool_stuff.init.CoolPaintingInit;
+import dev.kurykat.cool_stuff.init.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
@@ -25,6 +23,8 @@ public class CoolStuff {
         CoolItemInit.COOL_ITEMS.register(bus);
         CoolBlockInit.COOL_BLOCKS.register(bus);
         CoolPaintingInit.COOL_PAINTINGS.register(bus);
+        CoolConfiguredFeatureInit.COOL_CONFIGURED_FEATURES.register(bus);
+        CoolPlacedFeatureInit.COOL_PLACED_FEATURES.register(bus);
     }
 
     public static final CreativeModeTab COOL_CREATIVE_TAB = new CreativeModeTab(COOL_MOD_ID) {
@@ -34,7 +34,7 @@ public class CoolStuff {
         }
     };
 
-    public static Item.Properties defaultProps() {
+    public static Item.Properties defaultItemProps() {
         return new Item.Properties().tab(COOL_CREATIVE_TAB);
     }
 
