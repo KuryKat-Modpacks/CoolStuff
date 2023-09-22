@@ -23,7 +23,7 @@
   "block.cool_stuff.cool_advanced_block": "Cool \"Advanced\" Block",
   "block.cool_stuff.cool_flower": "Cool Flower",
   "block.cool_stuff.cool_potted_flower": "Cool Potted Flower",
-  "cooL_stuff.cool_advanced_item.right_click": "Hello World!",
-  "cooL_stuff.cool_advanced_item.tooltip": "Press \\u00A75[SHIFT]\\u00A7r for more information",
-  "cooL_stuff.cool_advanced_item.tooltip.shift": "HEY YOU THERE! YES YOU!\nCLICK ME!\nRIGHT NOW!!"
+  "cool_stuff.cool_advanced_item.right_click": "Hello World!",
+  "cool_stuff.cool_advanced_item.tooltip": "Press \\u00A75[SHIFT]\\u00A7r for more information",
+  "cool_stuff.cool_advanced_item.tooltip.shift": "HEY YOU THERE! YES YOU!\nCLICK ME!\nRIGHT NOW!!"
 }
